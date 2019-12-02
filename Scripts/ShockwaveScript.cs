@@ -21,27 +21,11 @@ public class ShockwaveScript : MonoBehaviour {
 
     void Update()
     {
-        //Debug.Log(radius);
-        /*
-        if (transform.localScale.x < (2 * radius))
-        {
-            transform.localScale += new Vector3(3f, .5f, 3f);
-        }
-        */
         transform.localScale += new Vector3(3f, .5f, 3f);
         if (transform.localScale.x >= (2 * radius)) {
-            //transform.localScale = new Vector3(1, 1, 1);
             this.GetComponent<AudioSource>().mute = true;
             Destroy(this.gameObject, 3);
         }
-        /*
-        if (transform.localScale.x > 10) {
-            Color color = this.GetComponent<MeshRenderer>().material.color;
-            color.a -= Time.deltaTime * fadeSpeed;
-            this.GetComponent<MeshRenderer>().material.color = color;
-            //ShockMat.material.SetFloat("_SoftParticlesFactor", 0f);
-        }
-        */
     }
 
 }
