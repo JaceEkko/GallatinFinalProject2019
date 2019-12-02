@@ -28,16 +28,3 @@ public class ExplosionScript : MonoBehaviour {
     }
         
 }
-/*
-ParticleSystem particleSystem;
-public ParticleSystemShapeType boxShape = ParticleSystemShapeType.Box;
-public Vector3 boxSize = new Vector3(100.0f, 1.0f, 1.0f);
-
-void Start()
-{
-    particleSystem = this.gameObject.GetComponent<ParticleSystem>();
-    var shape = particleSystem.shape;
-    shape.shapeType = boxShape;
-    shape.box = boxSize;
-}
-*/
