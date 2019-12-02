@@ -14,7 +14,7 @@ public class AlignMountain : MonoBehaviour {
     Vector3 mountPos;
     float spawnDist;
     float mountSize; // The farther the spawnPoint the Bigger the mountain
-    float mountRise = 0.0f; //increment to make mountain irse from the ground;
+    float mountRise = 0.0f; //increment to make mountain rise from the ground;
     float offsetAmount;
 
     [SerializeField] private lookTest lt;
@@ -48,7 +48,7 @@ public class AlignMountain : MonoBehaviour {
             mountPos.y = mountRise;
         }
         
-        this.transform.position = mountPos;//new Vector3(xOffset, 2.0f, zOffset);
+        this.transform.position = mountPos;
 
     }
 
